@@ -1,0 +1,9 @@
+name: call-reusable-workflow
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  echo:
+    uses: ksato22/reusable-workflow-repo/.github/workflows/reusable-echo.yaml@main
